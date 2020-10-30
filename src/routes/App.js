@@ -35,6 +35,8 @@ function App () {
       .then(series => setSeries(series))
   }
 
+  if (comics.length === 0 || series.length === 0) return <p>Loading...</p>
+
   return (
     <Layout>
       <Router>
