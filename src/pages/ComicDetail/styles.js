@@ -11,6 +11,7 @@ export const Main = styled.main`
   }
   & h1 {
     margin-bottom: 15px;
+    font-size: 27px;
   }
   & p {
     margin-bottom: 15px;
