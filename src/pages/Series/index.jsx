@@ -3,17 +3,16 @@ import SeriesList from '../../components/SeriesList'
 import { Main } from '../Home/styles'
 
 const Series = (props) => {
-  // const {
-  //   data: {
-  //     results = []
-  //   }
-  // } = props
+  const {
+    data: {
+      results = []
+    }
+  } = props
 
   return (
     <Main>
       <h1>Mavel's Series</h1>
-      <SeriesList />
-      {/* <SeriesList series={results} /> */}
+      <SeriesList series={results} />
     </Main>
   )
 }

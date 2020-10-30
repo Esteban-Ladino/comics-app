@@ -3,11 +3,11 @@ import ComicList from '../../components/ComicList'
 import { Main } from './styles'
 
 const Home = (props) => {
-  // const {
-  //   data: {
-  //     results = []
-  //   }
-  // } = props
+  const {
+    data: {
+      results = []
+    }
+  } = props
 
   return (
     <Main>
@@ -19,8 +19,7 @@ const Home = (props) => {
         htmlFor='search'
       />
       <h1>Mavel's Comics</h1>
-      <ComicList />
-      {/* <ComicList comics={results} /> */}
+      <ComicList comics={results} />
     </Main>
   )
 }

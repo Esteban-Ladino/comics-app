@@ -4,20 +4,17 @@ import Card from '../Card'
 import { List } from '../ComicList/styles'
 
 const SeriesList = (props) => {
-  // const {
-  //   series = []
-  // } = props
+  const {
+    series = []
+  } = props
 
   return (
     <List>
-      <li><Link to='/'><Card /></Link></li>
-      <li><Link to='/'><Card /></Link></li>
-      <li><Link to='/'><Card /></Link></li>
-      <li><Link to='/'><Card /></Link></li>
-      <li><Link to='/'><Card /></Link></li>
-      <li><Link to='/'><Card /></Link></li>
-      <li><Link to='/'><Card /></Link></li>
-      <li><Link to='/'><Card /></Link></li>
+      {series
+        .map((serie) => (
+          <li key={serie.id}>
+            <Link to='/series'><Card {...serie} /></Link>
+          </li>))}
     </List>
   )
 }
